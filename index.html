@@ -101,7 +101,7 @@
   <section class="section hero" style="background-image: url('assets/images/hero-bg.png')" aria-label="home">
     <div class="container">
       <div class="hero-content">
-        <p class="hero-subtitle has-before" data-reveal="left" style="font-size: 30px;">Welcome To Sejenak</p>
+        <p class="hero-subtitle has-before" data-reveal="left" style="font-size: 30px;">Welcome to Sejenak</p>
         <h1 class="headline-lg hero-title" data-reveal="left" style="font-family: var(--ff-Amaranth); font-size: 48px;">
           Sejenak hadir, untuk pulihkan diri
         </h1>
@@ -193,18 +193,11 @@
       -->
 
   <section class="section motivational-quotes" aria-labelledby="quotes-label">
-    <div class="container">
-      <h2 class="headline-md text-center" id="quotes-label">Quotes of The Day</h2>
-      <p class="section-text text-center" style="font-family: var(--ff-Rubik);">
-        "Kesehatan mental adalah perjalanan, bukan tujuan. Teruslah melangkah!"
-      </p>
-      <p class="section-text text-center" style="font-family: var(--ff-Rubik);">
-        "Setiap langkah kecil adalah kemajuan. Jangan pernah meremehkan kekuatanmu!"
-      </p>
-      <p class="section-text text-center" style="font-family: var(--ff-Rubik);">
-        "Ingatlah, kamu tidak sendirian. Ada banyak orang yang peduli padamu."
-      </p>
-    </div>
+    <div class="slider-container">
+      <label class="section-subtitle title-lg text-center" id="quotes-label" data-reveal="bottom" style="font-size: 40px; color:  #2757a5;">
+        Quotes of the Day </label>
+      <div class="quote" id="quote"></div>
+  </div>
   </section>
 
   <!-- 
@@ -234,7 +227,7 @@
               Kesehatan mental memiliki peran yang besar dalam kehidupan..
             </p>
 
-            <a href="#" class="btn-text title-lg">Read More</a>
+            <a href="https://www.halodoc.com/artikel/9-cara-sederhana-menjaga-kesehatan-mental?srsltid=AfmBOopbZS0XYHUSZGzxr4ilK4-2_CUDR7RnndxH3XyWyUvdd8BRCnRv" class="btn-text title-lg" target="_blank">Read More</a>
 
           </div>
         </li>
@@ -252,7 +245,7 @@
               cara agar bisa terjaga..
             </p>
 
-            <a href="#" class="btn-text title-lg">Read More</a>
+            <a href="https://www.halodoc.com/artikel/mengidap-banyak-gangguan-mental-ini-cara-menghadapi-multiple-mental-health-issues" class="btn-text title-lg" target="_blank">Read More</a>
 
           </div>
         </li>
@@ -269,7 +262,7 @@
               dewasa, ternyata remaja Indonesia juga..
             </p>
 
-            <a href="#" class="btn-text title-lg">Read More</a>
+            <a href="https://www.prudential.co.id/id/pulse/article/cara-mengatasi-mental-health/" class="btn-text title-lg" target="_blank">Read More</a>
 
           </div>
         </li>
@@ -346,10 +339,6 @@
 
           <li>
             <a href="#" class="text footer-link">Pertanyaan yang Sering Diajukan</a>
-          </li>
-
-          <li>
-            <a href="#" class="text footer-link">Testimoni</a>
           </li>
 
           <li>
@@ -486,3 +475,29 @@
 </body>
 
 </html>
+<script>
+// Daftar kutipan
+        const quotes = [
+            "Hidup adalah apa yang terjadi saat kita sibuk merencanakan hal lain.",
+            "Keberhasilan bukan kunci kebahagiaan. Kebahagiaan adalah kunci keberhasilan.",
+            "Jangan menunggu waktu yang tepat, karena waktu tidak pernah datang.",
+            "Kebahagiaan tidak tergantung pada apa yang kita miliki, tetapi pada cara kita memandang hidup.",
+            "Percayalah pada dirimu sendiri dan semua yang bisa kamu capai.",
+            "Tantangan terbesar dalam hidup adalah menjadi diri sendiri di dunia yang terus berusaha menjadikanmu orang lain.",
+            "Kita tidak bisa mengubah arah angin, tetapi kita bisa menyesuaikan layar."
+        ];
+
+        // Fungsi untuk menampilkan kutipan acak
+        function showRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quoteElement = document.getElementById('quote');
+            quoteElement.textContent = quotes[randomIndex];
+        }
+
+        // Ganti kutipan setiap 5 detik (5000 ms)
+        setInterval(showRandomQuote, 5000);
+
+        // Tampilkan kutipan pertama saat halaman dimuat
+        showRandomQuote();
+  </script>
+

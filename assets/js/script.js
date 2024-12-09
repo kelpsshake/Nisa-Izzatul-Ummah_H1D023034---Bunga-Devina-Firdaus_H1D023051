@@ -188,5 +188,3 @@ const navLinks = document.querySelectorAll('.narbar-item .navbar-link').forEach(
     console.log(link);
   }
 })
-
-

@@ -171,6 +171,22 @@
                 transform: rotate(calc(var(--score) * 1.8deg - 90deg));
             }
         }
+        .btn-chat {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bb2;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-chat:hover {
+            background-color: #007bb2;
+        }
+
     </style>
 </head>
 
@@ -180,12 +196,12 @@
     <header class="header" data-header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="assets/images/logo_sejenak-removebg-preview.png" width="100" height="80" alt="sejenak home">
+                <img src="assets/images/logo_sejenak-removebg-preview.png" width="100" height="100" alt="sejenak">
             </a>
             <nav class="navbar" data-navbar>
                 <div class="navbar-top">
                     <a href="#" class="logo">
-                        <img src="assets/images/logo_sejenak-removebg-preview.png" width="100" height="80" alt="sejenak home">
+                        <img src="assets/images/arti.png" width="100" height="80" alt="Arti home">
                     </a>
                     <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
                         <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -214,116 +230,174 @@
     </section>
 
     <!-- Card Section -->
-    <main class="section card-section" >
+    <main class="section card-section">
         <div class="container">
             <h2 class="headline-md" style="font-size: 30px;">Info Psikolog</h2>
             <span class="section-artikel"></span>
             <div class="card-grid">
+                <!-- Card 1 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog2.jpeg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Maya Santaso</h2>
-                        <p class="stats">Psikolog Pendidikan • RS Vania Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Fokus pada terapi remaja dan sering memberikan workshop dan seminar
-                            tentang kesehatan mental remaja"</p>
-                    </div>
+                    <!-- Wrap card in <a> tag for navigation -->
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog2.jpeg" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Maya Santaso</h2>
+                            <p class="stats">Psikolog Pendidikan • RS Vania Bogor</p>
+                            <p class="card-description " style="font-family: var(--ff-Oswald);">"Fokus pada terapi remaja dan sering memberikan workshop dan seminar tentang kesehatan mental remaja"</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=maya" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
+    
+                <!-- Card 2 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog7.png" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Gaby Corella</h2>
-                        <p class="stats">Psikolog Remaja • RS Melania Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya berfokus untuk menangani kekhawatiran pada remaja yang menuju
-                            usia dewasa"</p>
-                    </div>
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog7.png" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Gaby Corella</h2>
+                            <p class="stats">Psikolog Remaja • RS Melania Bogor</p>
+                            <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya berfokus untuk menangani kekhawatiran pada remaja yang menuju usia dewasa"</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=gaby" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
+    
+                <!-- Card 3 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog3.jpeg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Cindy Wijaya</h2>
-                        <p class="stats">Psikolog Perkawinan • RS UMMI Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya bekerja dengan pasangan untuk mengatasi stres relasional dan
-                            meningkatkan komunikasi."</p>
-                    </div>
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog3.jpeg" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Cindy Wijaya</h2>
+                            <p class="stats">Psikolog Perkawinan • RS UMMI Bogor</p>
+                            <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya bekerja dengan pasangan untuk mengatasi stres relasional dan meningkatkan komunikasi."</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=cindy" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
+    
+                <!-- Card 4 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog4.jpeg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Jennifer Connelly</h2>
-                        <p class="stats">Psikologi Sosial • RS Hermina Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya mempelajari tingkah laku manusia dalam kaitannya dengan
-                            lingkungan."</p>
-                    </div>
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog4.jpeg" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Jennifer Connelly</h2>
+                            <p class="stats">Psikologi Sosial • RS Hermina Bogor</p>
+                            <p class="card-description" style="font-family: var(--ff-Oswald);">"Saya mempelajari tingkah laku manusia dalam kaitannya dengan lingkungan."</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=jennifer" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
+    
+                <!-- Card 5 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog5.jpeg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Budi Prasetyo</h2>
-                        <p class="stats">Psikolog Anak dan Remaja • RS PMI Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Berpengalaman dalam membantu individu muda mengelola stres dan
-                            tekanan yang mereka hadapi."</p>
-                    </div>
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog5.jpeg" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Budi Prasetyo</h2>
+                            <p class="stats">Psikolog Anak dan Remaja • RS PMI Bogor</p>
+                            <p class="card-description" style="font-family: var(--ff-Oswald);">"Berpengalaman dalam membantu individu muda mengelola stres dan tekanan yang mereka hadapi."</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=budi" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
+    
+                <!-- Card 6 -->
                 <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/psikolog6.png" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Dr. Anna Susanti</h2>
-                        <p class="stats">Psikolog Klinis • RS BMC Bogor</p>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">"Spesialis dalam terapi kognitif-perilaku dan konseling stres."</p>
-                    </div>
+                        <figure class="card-banner">
+                            <img src="assets/images/psikolog6.png" alt="Card Image" class="w-100">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="card-title">Dr. Anna Susanti</h2>
+                            <p class="stats">Psikolog Klinis • RS BMC Bogor</p>
+                            <p class="card-description" style="font-family: var(--ff-Oswald);">"Spesialis dalam terapi kognitif-perilaku dan konseling stres."</p>
+                            <!-- Add Chat Button -->
+                            <a href="chat.html?doctor=anna" class="btn-chat">Chat Now</a>
+                        </div>
+                    </a>
                 </div>
             </div>
+    
 
-            <h2 class="headline-md" style="font-size: 30px;">Info Obat</h2>
-            <span class="section-artikel"></span>
-            <div class="card-grid">
-                <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/obat1.jpg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Buspiron</h2>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">Obat untuk mengatasi gangguan kecemasan umum. Obat ini dapat
-                            meredakan gejala kecemasan, seperti gelisah, mudah tersinggung, pusing, sulit tidur, atau
-                            jantung berdebar-debar.</p>
-                    </div>
+        <h2 class="headline-md" style="font-size: 30px;">Info Obat</h2>
+        <span class="section-artikel"></span>
+        <div class="card-grid">
+            <div class="card">
+                <figure class="card-banner">
+                    <img src="assets/images/obat1.jpg" alt="Card Image" class="w-100">
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Buspiron</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Obat untuk mengatasi gangguan kecemasan umum. Obat ini dapat meredakan gejala kecemasan, seperti gelisah, mudah tersinggung, pusing, sulit tidur, atau jantung berdebar-debar.</p>
                 </div>
-                <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/obat2.jpg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Antidepresan</h2>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">Obat antidepresan yang paling umum diresepkan oleh dokter sebagai
-                            penanganan awal adalah obat golongan selective serotonin reuptake inhibitors (SSRIs). </p>
-                    </div>
+            </div>
+            <div class="card">
+                <figure class="card-banner">
+                    <img src="assets/images/obat2.jpg" alt="Card Image" class="w-100">
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Antidepresan</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Obat antidepresan yang paling umum diresepkan oleh dokter sebagai penanganan awal adalah obat golongan selective serotonin reuptake inhibitors (SSRIs).</p>
                 </div>
-                <div class="card">
-                    <figure class="card-banner">
-                        <img src="assets/images/obat3.jpeg" alt="Card Image" class="w-100">
-                    </figure>
-                    <div class="card-content">
-                        <h2 class="card-title">Aripiprazole</h2>
-                        <p class="card-description" style="font-family: var(--ff-Oswald);">Obat antipsikotik untuk meredakan gejala gangguan mental berat yang
-                            disebut skizofrenia. Obat ini juga bisa digunakan dalam pengobatan gangguan bipolar atau
-                            depresi berat.</p>
-                    </div>
+            </div>
+            <div class="card">
+                <figure class="card-banner">
+                    <img src="assets/images/obat3.jpeg" alt="Card Image" class="w-100">
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Aripiprazole</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Obat antipsikotik untuk meredakan gejala gangguan mental berat yang disebut skizofrenia. Obat ini juga bisa digunakan dalam pengobatan gangguan bipolar atau depresi berat.</p>
                 </div>
             </div>
         </div>
-    </main>
+
+        <!-- Mindfulness Section -->
+        <h2 class="headline-md" style="font-size: 30px;">Mindfulness</h2>
+        <span class="section-artikel"></span>
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <figure class="card-banner">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/3lWja7H9_Zw?autoplay=1&mute=0&si=QpZDu2sRL3A1aXkS" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Gangguan Kesehatan Mental</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Dalam menjaga kesehatan, tak melulu soal kesehatan fisik atau jasmani saja, tapi juga perlu perhatikan kesehatan mental. Kapan bisa disebut sehat mental? Ketika seseorang mampu untuk mengontrol stres dengan wajar, produktif, dan berperan aktif. Kira-kira apa saja yang menyebabkan gangguan kesehatan mental?</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <figure class="card-banner">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/wIiUxN5sE7Y?autoplay=1&mute=0&si=kwHiiPcNGS5fLADa" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Apa itu Mindfulness?</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Dengan mindfulness hidup lebih sehat & bahagia. Apa itu Mindfulness? Ikuti video ini untuk mengetahui lebih lanjut dan mulai menerapkannya dalam kehidupan sehari-hari!</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <figure class="card-banner">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/ssss7V1_eyA?autoplay=1&mute=0&si=aFMdEIA3aAQx5qlM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+                <div class="card-content">
+                    <h2 class="card-title">Meditasi Mindfulness</h2>
+                    <p class="card-description" style="font-family: var(--ff-Oswald);">Bagi kamu yang sering mengalami banyak pikiran atau overthinking, video kali ini cocok banget buat kamu! Meditasi ini dapat menenangkan pikiran dan batinmu. Setelah melakukan teknik meditasi ini, kamu akan mulai merasakan perubahannya. Lakukan 3-5 kali sehari, terutama setelah bangun dan sebelum tidur. Selamat mencoba!</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</main>
+
 
     <!-- Footer -->
     <footer id="kontak" class="footer" style="background-image: url('assets/images/footer-bg.png')">
@@ -362,7 +436,6 @@
                         <p class="headline-sm footer-list-title">Program</p>
                     </li>
                     <li><a href="#" class="text footer-link">Pertanyaan yang Sering Diajukan</a></li>
-                    <li><a href="#" class="text footer-link">Testimoni</a></li>
                     <li><a href="#" class="text footer-link">Untuk Perawatan Kesehatan</a></li>
                     <li><a href="#" class="text footer-link">Untuk Perusahaan</a></li>
                     <li><a href="#" class="text footer-link">Test Stress Anda</a></li>
@@ -414,5 +487,4 @@
     <script src="assets/js/scripts.js"></script>
 
 </body>
-
 </html>

@@ -1998,3 +1998,33 @@ header .navbar .navbar-list .navbar-item a:hover:before{
     font-weight: 500; /* Ensure the weight is consistent */
     text-transform: uppercase; /* If needed, to match the style */
 }
+
+.slider-container {
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.quote {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Poppins-medium";
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
