@@ -514,7 +514,7 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 .hero-subtitle::before {
   top: 50%;
   left: 0;
-  width: 60px;
+  width: 100px;
   height: 1px;
   background-color: var(--white);
 }
@@ -1963,4 +1963,38 @@ header .navbar .navbar-list .navbar-item a:hover:before{
     font-size: 1em;
   }
 
+}
+
+/* New styles for hero section */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.hero-banner {
+  margin-left: -50px;
+}
+
+/* New styles for creator photos */
+.creator-photos {
+    display: flex;
+    justify-content: center; /* Center the photos */
+    gap: 20px; /* Space between the photos */
+    margin-top: 20px; /* Space above the photos */
+}
+
+.creator-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Ensure all navbar links have the same font size */
+.navbar-link {
+    font-size: 1.6rem; /* Adjust this value to match the size of "Beranda" */
+    font-weight: 500; /* Ensure the weight is consistent */
+    text-transform: uppercase; /* If needed, to match the style */
 }
