@@ -12,8 +12,6 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 /**
  * PRELOADER
- * 
- * preloader will be visible until document load
  */
 
 const preloader = document.querySelector("[data-preloader]");
@@ -27,9 +25,6 @@ window.addEventListener("load", function () {
 
 /**
  * MOBILE NAVBAR
- * 
- * show the mobile navbar when click menu button
- * and hidden after click menu close button or overlay
  */
 
 const navbar = document.querySelector("[data-navbar]");
@@ -48,8 +43,6 @@ addEventOnElements(navTogglers, "click", toggleNav);
 
 /**
  * HEADER & BACK TOP BTN
- * 
- * active header & back top btn when window scroll down to 100px
  */
 
 const header = document.querySelector("[data-header]");
@@ -127,7 +120,6 @@ const needle = document.getElementById('needle');
 const scoreElement = document.getElementById('score');
 const statusElement = document.getElementById('status');
 
-// Define status ranges with corresponding classes
 const statusRanges = [
     { max: 20, text: 'Bahagia', class: 'status-Bahagia' },
     { max: 40, text: 'Sehat', class: 'status-Sehat' },

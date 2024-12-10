@@ -1,16 +1,4 @@
 /*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -688,7 +676,7 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 }
 
 .about-benefits i {
-  color: #23b473; /* Warna hijau atau sesuaikan dengan kebutuhan */
+  color: #23b473;
   margin-right: 10px;
 }
 
@@ -702,263 +690,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
   height: auto;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #TESTIMONIAL
-\*-----------------------------------*/
-
-.carousel{
-	position: relative;
-	padding: 30px 0;
-	background: #fcfcfd;
-	z-index: 1;
-	width: 100%;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.carousel .section-title{
-	float: left;
-	position: relative;
-	width: 100%;
-	padding-bottom: 40px; 
-}
-
-.carousel .section-title p{
-	margin: 0 auto;
-}
-
-.carousel .section-title h2 {
-	float: left;
-	width: 100%;
-	text-align: center;
-	color: var(--midnight-blue);
-	position: relative;
-}
-
-.section-separator {
-	float: left;
-	width: 100%;
-	position: relative;
-	margin: 20px 0;
-}
-
-.section-separator:before{
-	content: '';
-	position: absolute;
-	left: 50%;
-	top: 0;
-	height: 4px;
-	width: 50px;
-	border-radius: 3px;
-	z-index: 2;
-	background-color: var(--midnight-blue);
-	margin-left: -25px;
-}
-
-.swiper-container {
-	width: 100%;
-	height: 100%;
-}
-
-.listing-carousel-button{
-	position: absolute;
-	top: 50%;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	margin-top: -25px;
-	z-index: 100;
-	cursor: pointer;
-	background: var(--verdigris);
-	box-shadow: 0 9px 26px rgba(58, 87,135,0.45);
-	transition: all 200ms linear;
-	outline: none;
-}
-
-
-.listing-carousel-button.listing-carousel-button-next{
-	right: 0px;
-	padding-right: 20px;
-	border-radius: 60px 0 0 60px;
-}
-
-.listing-carousel-button.listing-carousel-button-prev{
-	left: -10px;
-	padding-left: 20px;
-	border-radius: 0 60px 60px 0;
-  transition: 0.3s ease;
-}
-
-.listing-carousel-button.listing-carousel-button-next:hover{
-	right: 0px;
-	background: var(--midnight-blue);
-}
-
-.listing-carousel-button.listing-carousel-button-prev:hover{
-	left: -10px;
-	background: var(--midnight-blue);
-}
-
-.testi-item {
-	transition: all .3s ease-in-out;
-	transform: scale(0.9);
-	opacity: 0.9;
-}
-
-.testimonials-text {
-	padding: 75px 50px 75px;
-	overflow:hidden;
-	background: #f5f6fa;
-	border:1ps solid #f1f1f1;
-	border-radius: 10px;
-	transition: all .3s ease-in-out;
-}
-
-.testimonials-text-after{
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: inherit;
-	position: absolute;
-	color: #ccc;
-	opacity: .3;
-	font-size: 35px;
-	transition: all 400ms linear;
-	bottom: 25px;
-	right: 30px;
-}
-
-.testimonials-text-before{
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: inherit;
-	position: absolute;
-	color: #ccc;
-	opacity: .3;
-	font-size: 35px;
-	transition: all 400ms linear;
-	top: 25px;
-	left: 30px;
-}
-
-.testimonials-text .listing-rating{
-	float: none;
-	display: inline-block;
-	margin-bottom: 12px;
-}
-
-.listing-rating i{
-	color: var(--verdigris);
-}
-
-.testimonials-avatar h3{
-	font-weight: 600;
-	color: var(--independece);
-	font-size: 18px;
-}
-
-.testimonials-avatar h4{
-	font-weight:400;
-	font-size:12px;
-	padding-top:6px;
-	color:var(--verdigris);
-}
-
-.testimonials-carousel .swiper-slide{
-	padding: 30px 0;
-}	
-
-.testi-avatar{
-	position: absolute;
-	left: 50%;
-	top: -30px;
-	width: 90px;
-	height: 90px;
-	margin-left: -45px;
-	z-index: 20;
-}
-
-.testi-avatar img{
-	width: 90px;
-	height: 90px;
-	float: left;
-	border-radius: 100%;
-	border:6px solid #fff;
-	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
-}
-
-.swiper-slide-active .testimonials-text {
-	background: #fff;
-	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
-}
-
-.testimonials-text p{
-	color: #878c9f;
-	font-size: 14px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-	line-height: 24px;
-	padding-bottom: 10px;
-	font-weight: 500;
-}
-
-.text-link{
-	position: absolute;
-	bottom:0;
-	padding: 15px 0;
-	border-radius: 10px 10px 0 0;
-	background: #f9f9f9;
-	border:1px solid #eee;
-	box-shadow: 0 10px 15px rgba(0,0,0,0.03);
-	left: 50%;
-	width: 200px;
-	margin-left: -100px;
-}
-
-.swiper-slide-active .testi-item{
-	opacity: 1;
-	transform: scale(1.0);
-}
-
-.tc-pagination{
-	float: left;
-	margin-top: 10px;
-	width: 100% !important;
-}
-
-.tc-pagination_wrap {
-	position: absolute;
-	bottom: -40px;
-	left: 0;
-	width: 100%;
-}
-
-.tc-pagination2{
-	float: none;
-	display: inline-block;
-	padding: 14px 0;
-	background: #fff;
-	border-radius: 30px;
-	min-width: 250px;
-	border-bottom: 0;
-}
-
-.tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
-	opacity: 1;
-	background: #384f95;
-	margin:0 2px;
-	width: 10px;
-	height: 10px;
-	transition: all 300ms ease-in-out;
-}
-
-
-/*-------------------------------*/
-    /* Testimonials ends*/
-/*-------------------------------*/
 
 /*-------------------------------*/
     /*OWl Slider*/
@@ -1327,10 +1058,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
 
   /**
@@ -1401,14 +1128,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
   .counter h3{
     font-size: 1.1em;
   }
-
-
-
-  /**
-   * SERVICE
-   */
-
-  .service-list { grid-template-columns: 4fr 1fr; }
 
 
 
@@ -1518,8 +1237,8 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
 .about-text {
   color: var(--white);
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 25%;
+  padding-right: 25%;
   margin-top: 50px;
   font-size: 3rem;
   margin-bottom: 50px;
@@ -1573,11 +1292,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
 
 
-
-
-
-
-
   /**
    * LISTING
    */
@@ -1620,13 +1334,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
 
 
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
 
 
@@ -1651,36 +1358,7 @@ header .navbar .navbar-list .navbar-item a:hover:before{
     align-items: center;
   }
 
-  /**
-   * SERVICE
-   */
-
-  .service-list {
-      padding-block: 60px 60px;
-      padding-inline: 60px;
-      width: 100%;
-      margin: 0;
-      display: grid;
-      font-size: 1em;
-      gap: 30px;
-      border-radius: var(--radius-12);
-      margin-block-start: -120px;
-      background-color: var(--white);
-      box-shadow: var(--shadow-2);
-      grid-template-columns: repeat(1, 1fr); 
-  }
-
-  .counters{
-    padding: 3em 2em;
-    background: var(--verdigris);
-    color: var(--white);
-    text-align: center;
-    border-radius: var(--radius-12);
-    box-shadow: var(--shadow-2);
-  }
-
   
-
   /**
    * ABOUT
    */
@@ -1706,10 +1384,7 @@ header .navbar .navbar-list .navbar-item a:hover:before{
     width: auto;
     height: auto;
     margin-top: 20%;
-  }
-
-
-  
+  }  
   
   .speedometer {
     width: 400px;
@@ -1809,9 +1484,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
 }
 
-/**
- * responsive for large than 1200px screen
- */
 
 @media (min-width: 1200px) {
 
@@ -1893,8 +1565,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
   .footer { background-size: auto; }
 
-  /* .footer-top { grid-template-columns: repeat(4, 1fr); } */
-
   .footer-brand {
     grid-column: 1 / 5;
     padding: 28px 56px;
@@ -1965,7 +1635,6 @@ header .navbar .navbar-list .navbar-item a:hover:before{
 
 }
 
-/* New styles for hero section */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -1977,26 +1646,24 @@ header .navbar .navbar-list .navbar-item a:hover:before{
   margin-left: -50px;
 }
 
-/* New styles for creator photos */
 .creator-photos {
     display: flex;
-    justify-content: center; /* Center the photos */
-    gap: 20px; /* Space between the photos */
-    margin-top: 20px; /* Space above the photos */
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
 }
 
 .creator-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    border-radius: 50%; /* Make the image round */
-    object-fit: cover; /* Ensure the image covers the area */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover; 
 }
 
-/* Ensure all navbar links have the same font size */
 .navbar-link {
-    font-size: 1.6rem; /* Adjust this value to match the size of "Beranda" */
-    font-weight: 500; /* Ensure the weight is consistent */
-    text-transform: uppercase; /* If needed, to match the style */
+    font-size: 1.6rem; 
+    font-weight: 500; 
+    text-transform: uppercase; 
 }
 
 .slider-container {

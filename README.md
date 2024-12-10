@@ -1,2 +1,2 @@
-# CROWDIT2024_WebDesignCompetition_Bodhicitta
-Website "Arti" merupakan website yang ditujukan untuk membantu pengguna mengetahui kesehatan dari mental diri masing-masing dengan mengikuti tes yang disediakan. Selain itu, disediakan juga informasi terkait rekomendasi psikolog dan artikel yang diharapkan dapat membantu pengguna dalam meningkatkan kesehatan mental dalam diri.
+# WEBSITE SEJENAK #
+Sejenak hadir sebagai ruang untuk memberikan perhatian dan kenyamanan bagi setiap individu yang sedang menghadapi tantangan kesehatan mental. Kami percaya bahwa setiap orang berhak merasakan kedamaian dalam hidup mereka, dan terkadang, yang dibutuhkan hanya sejenak untuk berhenti, bernafas, dan merenung.
